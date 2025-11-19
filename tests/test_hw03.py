@@ -1,5 +1,8 @@
 import pytest
-from hw03.main import has_cycle, find_cycle
+import sys
+import os   
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from main import has_cycle, find_cycle
 
 def test_tree_is_acyclic():
     g = {
